@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/resources/Background_image.svg");
+    background-color: #121826;
+    color: #E5E7EB;
+    font-family: "Sora", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    margin: 30px 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 4%;
+}
+
+article {
+    flex: 1;
+    background-color: #212936;
+    border-radius: 25px;
+    width: 400px;
+
+    padding: 30px;
+    margin: 30px 0;
+
+}
+
+.article-logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    font-size: 2rem;
+    background-color: red;
+    border-radius: 30px;
+}
+
+.hand {
+    background-color: #FCEED8;
+}
+
+.goal {
+    background-color: #DEE9FC;
+}
+
+.question {
+    background-color: #FBE5E6;
+}
+
+article img {
+    border-radius: 25px;
+}
+
+article h3 {
+    font-size: 1.3rem;
+    padding: 15px 0;
+}
+
+article p {
+    width: 300px;
+    padding: 0 0 15px 0;
+}
+
+@media screen and (max-width: 640px) {
+    section {
+        flex-direction: column;
+    }
+
+
+    article {
+        width: 100%;
+    }
+
+    article p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    article {
+        width: 60%;
+        gap: 5%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+
+
+}
